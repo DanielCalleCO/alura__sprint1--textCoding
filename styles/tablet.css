@@ -1,0 +1,68 @@
+@media (max-width: 768px) {
+    .body__header {
+        margin-top: 20px;
+        margin-left: 42px;
+    }
+    .body__header img {
+        width: 20px;
+    }
+
+    .body__main {
+        margin: 30px 30px 15px;
+        flex-direction: column;
+    }
+
+    .body__main--input {
+        width: 400px;
+        height: 400px;
+    }
+    .body__main--Encriptarbtn {
+        width: 200px;
+    }
+
+    .body__main--Desencriptarbtn {
+        width: 200px;
+    }
+    .body__main--resultZone {
+        margin-left: 0px;
+    }
+    .body__main--resultZone img {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .body__main--btncontainer {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .body__main--input {
+        width: 200px;
+        height: 200px;
+    }
+    .body__main--input textarea {
+        font-size: 12px;
+    }
+    .body__main--Encriptarbtn {
+        font-size: 15px;
+    }
+    .body__main--Desencriptarbtn {
+        font-size: 15px;
+    }
+    .body__main--resultZone {
+        margin-left: 0px;
+        height: 200px;
+        width: 200px;
+    }
+    .main__resultZone--textNotFound {
+        font-size: 12px;
+    }
+    .main__resultZone--additionalText {
+        font-size: 8px;
+    }
+    .main__resultZone--copybtn {
+        font-size: 15px;
+        width: 200px;
+    }
+}
