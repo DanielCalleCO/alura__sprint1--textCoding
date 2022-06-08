@@ -75,6 +75,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .body__main--Desencriptarbtn {
@@ -90,9 +91,11 @@ body {
     color: #0a3871;
     font-size: 25px;
     border-radius: 24px;
+    cursor: pointer;
 }
 
 .body__main--resultZone {
+    position: relative;
     margin-left: 80px;
     padding-bottom: 10px;
     height: 700px;
@@ -105,8 +108,7 @@ body {
 }
 
 .main__resultZone--withoutText {
-    /* display: none; */
-    width: 100%;
+    width: 90%;
 }
 
 .main__resultZone--textNotFound {
@@ -125,8 +127,7 @@ body {
 
 .main__resultZone--withText {
     display: flex;
-    /* display: none; */
-    width: 100%;
+    width: 400px;
     height: 100%;
     justify-content: center;
     flex-wrap: wrap;
@@ -134,14 +135,22 @@ body {
 
 .body__main--finalText {
     height: 90%;
-    max-height: 680px;
-    width: 100%;
+    max-height: 580px;
+    width: 350px;
+    color: #0a3871;
+    font-size: 20px;
+    display: flex;
+    padding: 20px 10px;
+    overflow-y: hidden;
+    overflow-wrap: break-word;
 }
 
 .main__resultZone--copybtn {
+    position: absolute;
+    bottom: 15px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
     height: 67px;
     width: 328px;
     padding: 24px;
@@ -151,6 +160,7 @@ body {
     font-size: 25px;
     border-radius: 24px;
     margin: 0px 15px;
+    cursor: pointer;
 }
 
 footer {
