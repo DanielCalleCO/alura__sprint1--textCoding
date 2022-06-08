@@ -17,3 +17,5 @@ encriptarbtn.addEventListener("click", () => {
 function encriptar() {
     const textToEncode = text.value;
 }
+
+console.log("Holi");
