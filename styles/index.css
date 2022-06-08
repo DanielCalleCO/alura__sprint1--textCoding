@@ -6,6 +6,10 @@
     font-family: "Inter", sans-serif;
 }
 
+.hide {
+    display: none;
+}
+
 body {
     max-width: 1440px;
     margin: auto;
@@ -101,7 +105,7 @@ body {
 }
 
 .main__resultZone--withoutText {
-    display: none;
+    /* display: none; */
     width: 100%;
 }
 

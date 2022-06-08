@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta author="Daniel Calle | @DanielCalleCO" />
         <title>Text coding | @DanielCalleCO</title>
         <link rel="stylesheet" type="text/css" href="./styles/index.css" />
@@ -15,7 +15,10 @@
         <main class="body__main">
             <section>
                 <div class="body__main--input">
-                    <textarea placeholder="Ingrese el texto aquí"></textarea>
+                    <textarea
+                        id="textarea"
+                        placeholder="Ingrese el texto aquí"
+                    ></textarea>
                 </div>
                 <div class="body__main--alert">
                     <img src="./resources/icons/alert.svg" alt="alert" />
@@ -24,15 +27,19 @@
                     </p>
                 </div>
                 <div class="body__main--btncontainer">
-                    <button class="body__main--Encriptarbtn">Encriptar</button>
-                    <button class="body__main--Desencriptarbtn">
+                    <button id="encriptarBtn" class="body__main--Encriptarbtn">
+                        Encriptar
+                    </button>
+                    <button
+                        id="desencriptarBtn"
+                        class="body__main--Desencriptarbtn"
+                    >
                         Desencriptar
                     </button>
                 </div>
             </section>
-            <section class="body__main--resultZone">
+            <section id="result" class="body__main--resultZone">
                 <div class="main__resultZone--withoutText">
-                    <!--! Este div se va cuando haya texto -->
                     <img src="./resources/images/boy.png" alt="Error" />
                     <h2 class="main__resultZone--textNotFound">
                         Ningún mensaje fue encontrado
@@ -40,12 +47,6 @@
                     <p class="main__resultZone--additionalText">
                         Ingresa el texto de que desees encriptar o desencriptar.
                     </p>
-                </div>
-                <div class="main__resultZone--withText">
-                    <div class="body__main--finalText">
-                        <!--todo Aquí irá el texto final -->
-                    </div>
-                    <button class="main__resultZone--copybtn">Copiar</button>
                 </div>
             </section>
         </main>
@@ -60,5 +61,6 @@
                 </a>
             </p>
         </footer>
+        <script src="./src/index.js"></script>
     </body>
 </html>
